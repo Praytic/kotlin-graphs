@@ -2,15 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3e220c2a-22e3-4c67-8cd8-79a1193546bb" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ssu-graphs/storage/Edge.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ssu-graphs/storage/Graph.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ssu-graphs/storage/Vertex.class" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/storage/AdjacencyList.kt" afterPath="$PROJECT_DIR$/src/storage/AdjacencyList.kt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/storage/AdjacencyMatrix.kt" afterPath="$PROJECT_DIR$/src/storage/AdjacencyMatrix.kt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/storage/Edge.kt" afterPath="$PROJECT_DIR$/src/storage/Edge.kt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/storage/Graph.kt" afterPath="$PROJECT_DIR$/src/storage/Graph.kt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/storage/Vertex.kt" afterPath="$PROJECT_DIR$/src/storage/Vertex.kt" />
     </list>
     <ignored path="ssu-graphs.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -48,12 +43,83 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Graph.kt" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Graph.kt" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/storage/Graph.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="32" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="32" />
+            <state relative-caret-position="450">
+              <caret line="30" column="19" selection-start-line="30" selection-start-column="19" selection-end-line="30" selection-end-column="19" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Collections.kt" pinned="false" current-in-tab="false">
+        <entry file="jar://$KOTLIN_BUNDLED$/lib/kotlin-runtime-sources.jar!/kotlin/Collections.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-132">
+              <caret line="271" column="17" selection-start-line="271" selection-start-column="17" selection-end-line="271" selection-end-column="17" />
+              <folding>
+                <element signature="n#!!doc;n#Iterable#0" expanded="false" />
+                <element signature="n#!!block;n#Iterable#0" expanded="false" />
+                <element signature="n#!!doc;n#iterator#0;n#!!block;n#Iterable#0" expanded="false" />
+                <element signature="n#!!doc;n#MutableIterable#0" expanded="false" />
+                <element signature="n#!!block;n#MutableIterable#0" expanded="false" />
+                <element signature="n#!!doc;n#iterator#0;n#!!block;n#MutableIterable#0" expanded="false" />
+                <element signature="n#!!doc;n#Collection#0" expanded="false" />
+                <element signature="n#!!block;n#Collection#0" expanded="false" />
+                <element signature="n#!!doc;n#size#0;n#!!block;n#Collection#0" expanded="false" />
+                <element signature="n#!!doc;n#isEmpty#0;n#!!block;n#Collection#0" expanded="false" />
+                <element signature="n#!!doc;n#contains#0;n#!!block;n#Collection#0" expanded="false" />
+                <element signature="n#!!doc;n#containsAll#0;n#!!block;n#Collection#0" expanded="false" />
+                <element signature="n#!!doc;n#MutableCollection#0" expanded="false" />
+                <element signature="n#!!block;n#MutableCollection#0" expanded="false" />
+                <element signature="n#!!doc;n#add#0;n#!!block;n#MutableCollection#0" expanded="false" />
+                <element signature="n#!!doc;n#remove#0;n#!!block;n#MutableCollection#0" expanded="false" />
+                <element signature="n#!!doc;n#addAll#0;n#!!block;n#MutableCollection#0" expanded="false" />
+                <element signature="n#!!doc;n#removeAll#0;n#!!block;n#MutableCollection#0" expanded="false" />
+                <element signature="n#!!doc;n#retainAll#0;n#!!block;n#MutableCollection#0" expanded="false" />
+                <element signature="n#!!doc;n#clear#0;n#!!block;n#MutableCollection#0" expanded="false" />
+                <element signature="n#!!doc;n#List#0" expanded="false" />
+                <element signature="n#!!block;n#List#0" expanded="false" />
+                <element signature="n#!!doc;n#get#0;n#!!block;n#List#0" expanded="false" />
+                <element signature="n#!!doc;n#indexOf#0;n#!!block;n#List#0" expanded="false" />
+                <element signature="n#!!doc;n#lastIndexOf#0;n#!!block;n#List#0" expanded="false" />
+                <element signature="n#!!doc;n#listIterator#0;n#!!block;n#List#0" expanded="false" />
+                <element signature="n#!!doc;n#listIterator#1;n#!!block;n#List#0" expanded="false" />
+                <element signature="n#!!doc;n#subList#0;n#!!block;n#List#0" expanded="false" />
+                <element signature="n#!!doc;n#MutableList#0" expanded="false" />
+                <element signature="n#!!block;n#MutableList#0" expanded="false" />
+                <element signature="n#!!doc;n#addAll#1;n#!!block;n#MutableList#0" expanded="false" />
+                <element signature="n#!!doc;n#set#0;n#!!block;n#MutableList#0" expanded="false" />
+                <element signature="n#!!doc;n#add#1;n#!!block;n#MutableList#0" expanded="false" />
+                <element signature="n#!!doc;n#removeAt#0;n#!!block;n#MutableList#0" expanded="false" />
+                <element signature="n#!!doc;n#Set#0" expanded="false" />
+                <element signature="n#!!block;n#Set#0" expanded="false" />
+                <element signature="n#!!doc;n#MutableSet#0" expanded="false" />
+                <element signature="n#!!block;n#MutableSet#0" expanded="false" />
+                <element signature="n#!!doc;n#Map#0" expanded="false" />
+                <element signature="n#!!doc;n#size#0;n#!!block;n#Map#0" expanded="false" />
+                <element signature="n#!!doc;n#isEmpty#0;n#!!block;n#Map#0" expanded="false" />
+                <element signature="n#!!doc;n#containsKey#0;n#!!block;n#Map#0" expanded="false" />
+                <element signature="n#!!doc;n#containsValue#0;n#!!block;n#Map#0" expanded="false" />
+                <element signature="n#!!doc;n#get#0;n#!!block;n#Map#0" expanded="false" />
+                <element signature="n#!!doc;n#keys#0;n#!!block;n#Map#0" expanded="false" />
+                <element signature="n#!!doc;n#values#0;n#!!block;n#Map#0" expanded="false" />
+                <element signature="n#!!doc;n#entries#0;n#!!block;n#Map#0" expanded="false" />
+                <element signature="n#!!doc;n#Entry#0;n#!!block;n#Map#0" expanded="false" />
+                <element signature="n#!!block;n#Entry#0;n#!!block;n#Map#0" expanded="false" />
+                <element signature="n#!!doc;n#key#0;n#!!block;n#Entry#0;n#!!block;n#Map#0" expanded="false" />
+                <element signature="n#!!doc;n#value#0;n#!!block;n#Entry#0;n#!!block;n#Map#0" expanded="false" />
+                <element signature="n#!!doc;n#MutableMap#0" expanded="false" />
+                <element signature="n#!!block;n#MutableMap#0" expanded="false" />
+                <element signature="n#!!doc;n#put#0;n#!!block;n#MutableMap#0" expanded="false" />
+                <element signature="n#!!doc;n#remove#0;n#!!block;n#MutableMap#0" expanded="false" />
+                <element signature="n#!!doc;n#putAll#0;n#!!block;n#MutableMap#0" expanded="false" />
+                <element signature="n#!!doc;n#clear#0;n#!!block;n#MutableMap#0" expanded="false" />
+                <element signature="n#!!doc;n#MutableEntry#0;n#!!block;n#MutableMap#0" expanded="false" />
+                <element signature="n#!!block;n#MutableEntry#0;n#!!block;n#MutableMap#0" expanded="false" />
+                <element signature="n#!!doc;n#setValue#0;n#!!block;n#MutableEntry#0;n#!!block;n#MutableMap#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -61,18 +127,18 @@
       <file leaf-file-name="AdjacencyMatrix.kt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/storage/AdjacencyMatrix.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="32" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
+            <state relative-caret-position="75">
+              <caret line="5" column="62" selection-start-line="5" selection-start-column="62" selection-end-line="5" selection-end-column="62" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AdjacencyList.kt" pinned="false" current-in-tab="true">
+      <file leaf-file-name="AdjacencyList.kt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/storage/AdjacencyList.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+            <state relative-caret-position="90">
+              <caret line="6" column="37" selection-start-line="6" selection-start-column="37" selection-end-line="6" selection-end-column="37" />
               <folding />
             </state>
           </provider>
@@ -81,8 +147,8 @@
       <file leaf-file-name="Vertex.kt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/storage/Vertex.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="30" selection-start-line="6" selection-start-column="30" selection-end-line="6" selection-end-column="30" />
+            <state relative-caret-position="180">
+              <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -91,8 +157,8 @@
       <file leaf-file-name="Edge.kt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/storage/Edge.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="73" selection-start-line="6" selection-start-column="73" selection-end-line="6" selection-end-column="73" />
+            <state relative-caret-position="30">
+              <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
               <folding />
             </state>
           </provider>
@@ -130,9 +196,9 @@
         <option value="$PROJECT_DIR$/src/storage/EdgeCost.kt" />
         <option value="$PROJECT_DIR$/src/storage/EdgeCost.java" />
         <option value="$PROJECT_DIR$/src/storage/Edge.kt" />
+        <option value="$PROJECT_DIR$/src/storage/Vertex.kt" />
         <option value="$PROJECT_DIR$/src/storage/AdjacencyList.kt" />
         <option value="$PROJECT_DIR$/src/storage/AdjacencyMatrix.kt" />
-        <option value="$PROJECT_DIR$/src/storage/Vertex.kt" />
         <option value="$PROJECT_DIR$/src/storage/Graph.kt" />
       </list>
     </option>
@@ -154,7 +220,7 @@
     <OptionsSetting value="true" id="Update" />
     <OptionsSetting value="true" id="Status" />
     <OptionsSetting value="true" id="Edit" />
-    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="1" id="Add" />
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectView">
@@ -187,6 +253,38 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="ssu-graphs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ssu-graphs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ssu-graphs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="storage" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ssu-graphs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ssu-graphs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -667,16 +765,16 @@
       <option name="presentableId" value="Default" />
       <updated>1473167322907</updated>
       <workItem from="1473167330255" duration="699000" />
-      <workItem from="1473179537869" duration="21168000" />
+      <workItem from="1473179537869" duration="23956000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21867000" />
+    <option name="totallyTimeSpent" value="24655000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -686,11 +784,11 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32934928" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934928" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.275" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.275" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -794,76 +892,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$KOTLIN_BUNDLED$/lib/kotlin-runtime-sources.jar!/kotlin/Collections.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc;n#Iterable#0" expanded="false" />
-            <element signature="n#!!block;n#Iterable#0" expanded="false" />
-            <element signature="n#!!doc;n#iterator#0;n#!!block;n#Iterable#0" expanded="false" />
-            <element signature="n#!!doc;n#MutableIterable#0" expanded="false" />
-            <element signature="n#!!block;n#MutableIterable#0" expanded="false" />
-            <element signature="n#!!doc;n#iterator#0;n#!!block;n#MutableIterable#0" expanded="false" />
-            <element signature="n#!!doc;n#Collection#0" expanded="false" />
-            <element signature="n#!!block;n#Collection#0" expanded="false" />
-            <element signature="n#!!doc;n#size#0;n#!!block;n#Collection#0" expanded="false" />
-            <element signature="n#!!doc;n#isEmpty#0;n#!!block;n#Collection#0" expanded="false" />
-            <element signature="n#!!doc;n#contains#0;n#!!block;n#Collection#0" expanded="false" />
-            <element signature="n#!!doc;n#containsAll#0;n#!!block;n#Collection#0" expanded="false" />
-            <element signature="n#!!doc;n#MutableCollection#0" expanded="false" />
-            <element signature="n#!!block;n#MutableCollection#0" expanded="false" />
-            <element signature="n#!!doc;n#add#0;n#!!block;n#MutableCollection#0" expanded="false" />
-            <element signature="n#!!doc;n#remove#0;n#!!block;n#MutableCollection#0" expanded="false" />
-            <element signature="n#!!doc;n#addAll#0;n#!!block;n#MutableCollection#0" expanded="false" />
-            <element signature="n#!!doc;n#removeAll#0;n#!!block;n#MutableCollection#0" expanded="false" />
-            <element signature="n#!!doc;n#retainAll#0;n#!!block;n#MutableCollection#0" expanded="false" />
-            <element signature="n#!!doc;n#clear#0;n#!!block;n#MutableCollection#0" expanded="false" />
-            <element signature="n#!!doc;n#List#0" expanded="false" />
-            <element signature="n#!!block;n#List#0" expanded="false" />
-            <element signature="n#!!doc;n#get#0;n#!!block;n#List#0" expanded="false" />
-            <element signature="n#!!doc;n#indexOf#0;n#!!block;n#List#0" expanded="false" />
-            <element signature="n#!!doc;n#lastIndexOf#0;n#!!block;n#List#0" expanded="false" />
-            <element signature="n#!!doc;n#listIterator#0;n#!!block;n#List#0" expanded="false" />
-            <element signature="n#!!doc;n#listIterator#1;n#!!block;n#List#0" expanded="false" />
-            <element signature="n#!!doc;n#subList#0;n#!!block;n#List#0" expanded="false" />
-            <element signature="n#!!doc;n#MutableList#0" expanded="false" />
-            <element signature="n#!!block;n#MutableList#0" expanded="false" />
-            <element signature="n#!!doc;n#addAll#1;n#!!block;n#MutableList#0" expanded="false" />
-            <element signature="n#!!doc;n#set#0;n#!!block;n#MutableList#0" expanded="false" />
-            <element signature="n#!!doc;n#add#1;n#!!block;n#MutableList#0" expanded="false" />
-            <element signature="n#!!doc;n#removeAt#0;n#!!block;n#MutableList#0" expanded="false" />
-            <element signature="n#!!doc;n#Set#0" expanded="false" />
-            <element signature="n#!!block;n#Set#0" expanded="false" />
-            <element signature="n#!!doc;n#MutableSet#0" expanded="false" />
-            <element signature="n#!!block;n#MutableSet#0" expanded="false" />
-            <element signature="n#!!doc;n#Map#0" expanded="false" />
-            <element signature="n#!!block;n#Map#0" expanded="false" />
-            <element signature="n#!!doc;n#size#0;n#!!block;n#Map#0" expanded="false" />
-            <element signature="n#!!doc;n#isEmpty#0;n#!!block;n#Map#0" expanded="false" />
-            <element signature="n#!!doc;n#containsKey#0;n#!!block;n#Map#0" expanded="false" />
-            <element signature="n#!!doc;n#containsValue#0;n#!!block;n#Map#0" expanded="false" />
-            <element signature="n#!!doc;n#get#0;n#!!block;n#Map#0" expanded="false" />
-            <element signature="n#!!doc;n#keys#0;n#!!block;n#Map#0" expanded="false" />
-            <element signature="n#!!doc;n#values#0;n#!!block;n#Map#0" expanded="false" />
-            <element signature="n#!!doc;n#entries#0;n#!!block;n#Map#0" expanded="false" />
-            <element signature="n#!!doc;n#Entry#0;n#!!block;n#Map#0" expanded="false" />
-            <element signature="n#!!block;n#Entry#0;n#!!block;n#Map#0" expanded="false" />
-            <element signature="n#!!doc;n#key#0;n#!!block;n#Entry#0;n#!!block;n#Map#0" expanded="false" />
-            <element signature="n#!!doc;n#value#0;n#!!block;n#Entry#0;n#!!block;n#Map#0" expanded="false" />
-            <element signature="n#!!doc;n#MutableMap#0" expanded="false" />
-            <element signature="n#!!block;n#MutableMap#0" expanded="false" />
-            <element signature="n#!!doc;n#put#0;n#!!block;n#MutableMap#0" expanded="false" />
-            <element signature="n#!!doc;n#remove#0;n#!!block;n#MutableMap#0" expanded="false" />
-            <element signature="n#!!doc;n#putAll#0;n#!!block;n#MutableMap#0" expanded="false" />
-            <element signature="n#!!doc;n#clear#0;n#!!block;n#MutableMap#0" expanded="false" />
-            <element signature="n#!!doc;n#MutableEntry#0;n#!!block;n#MutableMap#0" expanded="false" />
-            <element signature="n#!!block;n#MutableEntry#0;n#!!block;n#MutableMap#0" expanded="false" />
-            <element signature="n#!!doc;n#setValue#0;n#!!block;n#MutableEntry#0;n#!!block;n#MutableMap#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_101.jdk/Contents/Home/src.zip!/java/lang/Object.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
@@ -947,42 +975,111 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/storage/Graph.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="32" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/storage/Vertex.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="30" selection-start-line="6" selection-start-column="30" selection-end-line="6" selection-end-column="30" />
+        <state relative-caret-position="180">
+          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/storage/Edge.kt">
+    <entry file="jar://$KOTLIN_BUNDLED$/lib/kotlin-runtime-sources.jar!/kotlin/Collections.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-132">
+          <caret line="271" column="17" selection-start-line="271" selection-start-column="17" selection-end-line="271" selection-end-column="17" />
+          <folding>
+            <element signature="n#!!doc;n#Iterable#0" expanded="false" />
+            <element signature="n#!!block;n#Iterable#0" expanded="false" />
+            <element signature="n#!!doc;n#iterator#0;n#!!block;n#Iterable#0" expanded="false" />
+            <element signature="n#!!doc;n#MutableIterable#0" expanded="false" />
+            <element signature="n#!!block;n#MutableIterable#0" expanded="false" />
+            <element signature="n#!!doc;n#iterator#0;n#!!block;n#MutableIterable#0" expanded="false" />
+            <element signature="n#!!doc;n#Collection#0" expanded="false" />
+            <element signature="n#!!block;n#Collection#0" expanded="false" />
+            <element signature="n#!!doc;n#size#0;n#!!block;n#Collection#0" expanded="false" />
+            <element signature="n#!!doc;n#isEmpty#0;n#!!block;n#Collection#0" expanded="false" />
+            <element signature="n#!!doc;n#contains#0;n#!!block;n#Collection#0" expanded="false" />
+            <element signature="n#!!doc;n#containsAll#0;n#!!block;n#Collection#0" expanded="false" />
+            <element signature="n#!!doc;n#MutableCollection#0" expanded="false" />
+            <element signature="n#!!block;n#MutableCollection#0" expanded="false" />
+            <element signature="n#!!doc;n#add#0;n#!!block;n#MutableCollection#0" expanded="false" />
+            <element signature="n#!!doc;n#remove#0;n#!!block;n#MutableCollection#0" expanded="false" />
+            <element signature="n#!!doc;n#addAll#0;n#!!block;n#MutableCollection#0" expanded="false" />
+            <element signature="n#!!doc;n#removeAll#0;n#!!block;n#MutableCollection#0" expanded="false" />
+            <element signature="n#!!doc;n#retainAll#0;n#!!block;n#MutableCollection#0" expanded="false" />
+            <element signature="n#!!doc;n#clear#0;n#!!block;n#MutableCollection#0" expanded="false" />
+            <element signature="n#!!doc;n#List#0" expanded="false" />
+            <element signature="n#!!block;n#List#0" expanded="false" />
+            <element signature="n#!!doc;n#get#0;n#!!block;n#List#0" expanded="false" />
+            <element signature="n#!!doc;n#indexOf#0;n#!!block;n#List#0" expanded="false" />
+            <element signature="n#!!doc;n#lastIndexOf#0;n#!!block;n#List#0" expanded="false" />
+            <element signature="n#!!doc;n#listIterator#0;n#!!block;n#List#0" expanded="false" />
+            <element signature="n#!!doc;n#listIterator#1;n#!!block;n#List#0" expanded="false" />
+            <element signature="n#!!doc;n#subList#0;n#!!block;n#List#0" expanded="false" />
+            <element signature="n#!!doc;n#MutableList#0" expanded="false" />
+            <element signature="n#!!block;n#MutableList#0" expanded="false" />
+            <element signature="n#!!doc;n#addAll#1;n#!!block;n#MutableList#0" expanded="false" />
+            <element signature="n#!!doc;n#set#0;n#!!block;n#MutableList#0" expanded="false" />
+            <element signature="n#!!doc;n#add#1;n#!!block;n#MutableList#0" expanded="false" />
+            <element signature="n#!!doc;n#removeAt#0;n#!!block;n#MutableList#0" expanded="false" />
+            <element signature="n#!!doc;n#Set#0" expanded="false" />
+            <element signature="n#!!block;n#Set#0" expanded="false" />
+            <element signature="n#!!doc;n#MutableSet#0" expanded="false" />
+            <element signature="n#!!block;n#MutableSet#0" expanded="false" />
+            <element signature="n#!!doc;n#Map#0" expanded="false" />
+            <element signature="n#!!doc;n#size#0;n#!!block;n#Map#0" expanded="false" />
+            <element signature="n#!!doc;n#isEmpty#0;n#!!block;n#Map#0" expanded="false" />
+            <element signature="n#!!doc;n#containsKey#0;n#!!block;n#Map#0" expanded="false" />
+            <element signature="n#!!doc;n#containsValue#0;n#!!block;n#Map#0" expanded="false" />
+            <element signature="n#!!doc;n#get#0;n#!!block;n#Map#0" expanded="false" />
+            <element signature="n#!!doc;n#keys#0;n#!!block;n#Map#0" expanded="false" />
+            <element signature="n#!!doc;n#values#0;n#!!block;n#Map#0" expanded="false" />
+            <element signature="n#!!doc;n#entries#0;n#!!block;n#Map#0" expanded="false" />
+            <element signature="n#!!doc;n#Entry#0;n#!!block;n#Map#0" expanded="false" />
+            <element signature="n#!!block;n#Entry#0;n#!!block;n#Map#0" expanded="false" />
+            <element signature="n#!!doc;n#key#0;n#!!block;n#Entry#0;n#!!block;n#Map#0" expanded="false" />
+            <element signature="n#!!doc;n#value#0;n#!!block;n#Entry#0;n#!!block;n#Map#0" expanded="false" />
+            <element signature="n#!!doc;n#MutableMap#0" expanded="false" />
+            <element signature="n#!!block;n#MutableMap#0" expanded="false" />
+            <element signature="n#!!doc;n#put#0;n#!!block;n#MutableMap#0" expanded="false" />
+            <element signature="n#!!doc;n#remove#0;n#!!block;n#MutableMap#0" expanded="false" />
+            <element signature="n#!!doc;n#putAll#0;n#!!block;n#MutableMap#0" expanded="false" />
+            <element signature="n#!!doc;n#clear#0;n#!!block;n#MutableMap#0" expanded="false" />
+            <element signature="n#!!doc;n#MutableEntry#0;n#!!block;n#MutableMap#0" expanded="false" />
+            <element signature="n#!!block;n#MutableEntry#0;n#!!block;n#MutableMap#0" expanded="false" />
+            <element signature="n#!!doc;n#setValue#0;n#!!block;n#MutableEntry#0;n#!!block;n#MutableMap#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/storage/AdjacencyList.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
-          <caret line="6" column="73" selection-start-line="6" selection-start-column="73" selection-end-line="6" selection-end-column="73" />
+          <caret line="6" column="37" selection-start-line="6" selection-start-column="37" selection-end-line="6" selection-end-column="37" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/storage/AdjacencyMatrix.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="32" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
+        <state relative-caret-position="75">
+          <caret line="5" column="62" selection-start-line="5" selection-start-column="62" selection-end-line="5" selection-end-column="62" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/storage/AdjacencyList.kt">
+    <entry file="file://$PROJECT_DIR$/src/storage/Edge.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+        <state relative-caret-position="30">
+          <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/storage/Graph.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="30" column="19" selection-start-line="30" selection-start-column="19" selection-end-line="30" selection-end-column="19" />
           <folding />
         </state>
       </provider>

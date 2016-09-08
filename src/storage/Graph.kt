@@ -9,17 +9,16 @@ class Graph<T>(val verticies: MutableSet<Vertex<T>>,
     constructor(graph: Graph<T>): this(graph.verticies, graph.edges)
 
     fun getAsAdjacencyMatrix(): AdjacencyMatrix<T> {
-        val adjacencyMatrix = AdjacencyMatrix<T>()
-        val column = verticies.map { x -> x.data to mutableMapOf<T, Map<T, Number?>>() }.toMap()
+        val mutableColumn = mutableMapOf<T, MutableMap<T, Number?>>()
         for (i in verticies) {
             val mutableRow = mutableMapOf<T, Number?>()
             for (j in verticies) {
                 val edge = (edges.find { x -> x.to == j } ?: Edge(i, j, 0))
-                column.get(edge.from.data).put(edge.to.data);
+                mutableRow.put(edge.to.data, edge.cost)
             }
-            column.get(i.data)?..put(i.data, mutableRow)
+            mutableColumn.put(i.data, mutableRow)
         }
-        return adjacencyMatrix
+        return AdjacencyMatrix<T>(mutableColumn)
     }
 
     fun isIsomorphic(graph: Graph<T>): Boolean {
@@ -28,5 +27,7 @@ class Graph<T>(val verticies: MutableSet<Vertex<T>>,
         if (graph.edges.size != this.edges.size) return false
 
         val adjacencyMatrix = graph.getAsAdjacencyMatrix()
+
+        return true
     }
 }
