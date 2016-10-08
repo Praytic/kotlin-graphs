@@ -2,8 +2,8 @@ package algorithm
 
 import storage.Graph
 
-internal class AreIsomorphicAlgorithm<T>(val graph1: Graph<T>, val graph2: Graph<T>, var result: Boolean = false):
-        Runnable {
+internal class AreIsomorphic<T>(val graph1: Graph<T>, val graph2: Graph<T>):
+        Algorithm<Boolean>(false) {
 
     override fun run() {
         if (graph1 === graph2) {

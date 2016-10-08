@@ -2,8 +2,8 @@ package algorithm
 
 import storage.Vertex
 
-internal class FindAllPathsAlgorithm<T>(val from: Vertex<T>, val to: Vertex<T>,
-                                        val result: Set<Vertex<T>> = emptySet<Vertex<T>>()): Runnable {
+internal class FindAllPaths<T>(val from: Vertex<T>, val to: Vertex<T>):
+        Algorithm<Set<Vertex<T>>>(emptySet<Vertex<T>>()) {
 
     override fun run() {
         if (havePath()) {
