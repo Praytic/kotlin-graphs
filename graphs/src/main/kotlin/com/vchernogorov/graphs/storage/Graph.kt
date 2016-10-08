@@ -6,5 +6,5 @@ package com.vchernogorov.graphs.storage
 class Graph<T>(val verticies: MutableSet<Vertex<T>>,
                val edges: MutableSet<Edge<T>>) {
     constructor(): this(mutableSetOf(), mutableSetOf())
-    constructor(graph: com.vchernogorov.graphs.Graph<T>): this(graph.verticies, graph.edges)
+    constructor(graph: Graph<T>): this(graph.verticies, graph.edges)
 }

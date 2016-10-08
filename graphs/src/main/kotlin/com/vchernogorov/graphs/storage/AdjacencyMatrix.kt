@@ -5,7 +5,7 @@ package com.vchernogorov.graphs.storage
  */
 class AdjacencyMatrix<T>(val storage: MutableMap<T, MutableMap<T, Number?>>) {
     constructor(): this(mutableMapOf())
-    constructor(adjacencyMatrix: com.vchernogorov.graphs.AdjacencyMatrix<T>): this(adjacencyMatrix.storage)
+    constructor(adjacencyMatrix: AdjacencyMatrix<T>): this(adjacencyMatrix.storage)
     constructor(graph: Graph<T>): this() {
         for (i in graph.verticies) {
             val mutableRow = mutableMapOf<T, Number?>()

@@ -2,38 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3e220c2a-22e3-4c67-8cd8-79a1193546bb" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/graphs/src/main/kotlin/com/vchernogorov/graphs/algorithm/Algorithm.kt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/graphs/src/main/kotlin/com/vchernogorov/graphs/algorithm/AreIsomorphic.kt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/graphs/src/main/kotlin/com/vchernogorov/graphs/algorithm/FindAllPaths.kt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/graphs/src/main/kotlin/com/vchernogorov/graphs/algorithm/FindAllShortestCycles.kt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/graphs/src/main/kotlin/com/vchernogorov/graphs/algorithm/FindMinimumSpanningTree.kt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/graphs/src/main/kotlin/com/vchernogorov/graphs/algorithm/GraphUtils.kt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/graphs/src/main/kotlin/com/vchernogorov/graphs/algorithm/IsForest.kt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/graphs/src/main/kotlin/com/vchernogorov/graphs/algorithm/IsTree.kt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/graphs/src/main/kotlin/com/vchernogorov/graphs/storage/AdjacencyList.kt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/graphs/src/main/kotlin/com/vchernogorov/graphs/storage/AdjacencyMatrix.kt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/graphs/src/main/kotlin/com/vchernogorov/graphs/storage/Edge.kt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/graphs/src/main/kotlin/com/vchernogorov/graphs/storage/Graph.kt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/graphs/src/main/kotlin/com/vchernogorov/graphs/storage/Vertex.kt" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Application.kt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/algorithm/Algorithm.kt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/algorithm/AreIsomorphic.kt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/algorithm/FindAllPaths.kt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/algorithm/FindAllShortestCycles.kt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/algorithm/FindMinimumSpanningTree.kt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/algorithm/GraphUtils.kt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/algorithm/IsForest.kt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/algorithm/IsTree.kt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/storage/AdjacencyList.kt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/storage/AdjacencyMatrix.kt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/storage/Edge.kt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/storage/Graph.kt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/storage/Vertex.kt" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ssu-graphs.iml" afterPath="$PROJECT_DIR$/ssu-graphs.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/graphs/src/main/kotlin/com/vchernogorov/graphs/algorithm/IsTree.kt" afterPath="$PROJECT_DIR$/graphs/src/main/kotlin/com/vchernogorov/graphs/algorithm/IsTree.kt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/graphs/src/main/kotlin/com/vchernogorov/graphs/storage/AdjacencyList.kt" afterPath="$PROJECT_DIR$/graphs/src/main/kotlin/com/vchernogorov/graphs/storage/AdjacencyList.kt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/graphs/src/main/kotlin/com/vchernogorov/graphs/storage/AdjacencyMatrix.kt" afterPath="$PROJECT_DIR$/graphs/src/main/kotlin/com/vchernogorov/graphs/storage/AdjacencyMatrix.kt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/graphs/src/main/kotlin/com/vchernogorov/graphs/storage/Edge.kt" afterPath="$PROJECT_DIR$/graphs/src/main/kotlin/com/vchernogorov/graphs/storage/Edge.kt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/graphs/src/main/kotlin/com/vchernogorov/graphs/storage/Graph.kt" afterPath="$PROJECT_DIR$/graphs/src/main/kotlin/com/vchernogorov/graphs/storage/Graph.kt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/graphs/src/main/kotlin/com/vchernogorov/graphs/storage/Vertex.kt" afterPath="$PROJECT_DIR$/graphs/src/main/kotlin/com/vchernogorov/graphs/storage/Vertex.kt" />
     </list>
     <ignored path="ssu-graphs.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -60,8 +35,40 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Graph.kt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/graphs/src/main/kotlin/com/vchernogorov/graphs/storage/Graph.kt">
+      <file leaf-file-name="GraphUtils.kt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/graphs/src/main/kotlin/com/vchernogorov/graphs/algorithm/GraphUtils.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="20" column="1" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
+              <folding>
+                <element signature="e#43#133#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IsForest.kt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/graphs/src/main/kotlin/com/vchernogorov/graphs/algorithm/IsForest.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" column="15" selection-start-line="4" selection-start-column="15" selection-end-line="4" selection-end-column="15" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IsTree.kt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/graphs/src/main/kotlin/com/vchernogorov/graphs/algorithm/IsTree.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" column="15" selection-start-line="4" selection-start-column="15" selection-end-line="4" selection-end-column="15" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AdjacencyList.kt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/graphs/src/main/kotlin/com/vchernogorov/graphs/storage/AdjacencyList.kt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="75">
               <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
@@ -70,100 +77,66 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="lecture-4.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/theory/lecture-4.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="150">
-                <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-                <folding />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="lecture-2.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/theory/lecture-2.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="FIRST">
-              <first_editor relative-caret-position="450">
-                <caret line="30" column="57" selection-start-line="30" selection-start-column="57" selection-end-line="30" selection-end-column="57" />
-                <folding />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AdjacencyMatrix.kt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/graphs/src/main/kotlin/com/vchernogorov/graphs/storage/AdjacencyMatrix.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-332">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="18" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/graphs/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="88">
-              <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="IsTreeTest.kt" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/graphs/src/test/kotlin/com/vchernogorov/graphs/algorithm/IsTreeTest.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="1" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Vertex.kt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/graphs/src/main/kotlin/com/vchernogorov/graphs/storage/Vertex.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="23" column="1" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Edge.kt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/graphs/src/main/kotlin/com/vchernogorov/graphs/storage/Edge.kt">
+      <file leaf-file-name="Algorithm.kt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/graphs/src/main/kotlin/com/vchernogorov/graphs/algorithm/Algorithm.kt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="30">
-              <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+              <caret line="2" column="24" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AreIsomorphic.kt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/graphs/src/main/kotlin/com/vchernogorov/graphs/algorithm/AreIsomorphic.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" column="15" selection-start-line="4" selection-start-column="15" selection-end-line="4" selection-end-column="15" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DepthFirstSearch.kt" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/graphs/src/main/kotlin/com/vchernogorov/graphs/algorithm/DepthFirstSearch.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="5" column="15" selection-start-line="5" selection-start-column="15" selection-end-line="5" selection-end-column="15" />
               <folding>
-                <marker date="1475965488000" expanded="true" signature="179:903" ph="{...}" />
+                <element signature="e#43#133#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FindAllPaths.kt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/graphs/src/main/kotlin/com/vchernogorov/graphs/algorithm/FindAllPaths.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" column="15" selection-start-line="4" selection-start-column="15" selection-end-line="4" selection-end-column="15" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FindAllShortestCycles.kt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/graphs/src/main/kotlin/com/vchernogorov/graphs/algorithm/FindAllShortestCycles.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="5" column="15" selection-start-line="5" selection-start-column="15" selection-end-line="5" selection-end-column="15" />
+              <folding>
+                <element signature="e#43#133#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FindMinimumSpanningTree.kt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/graphs/src/main/kotlin/com/vchernogorov/graphs/algorithm/FindMinimumSpanningTree.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" column="15" selection-start-line="4" selection-start-column="15" selection-end-line="4" selection-end-column="15" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -225,6 +198,13 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/graphs/pom.xml" />
         <option value="$PROJECT_DIR$/graphs/src/test/kotlin/com/vchernogorov/graphs/algorithm/IsTreeTest.kt" />
+        <option value="$PROJECT_DIR$/graphs/src/main/kotlin/com/vchernogorov/graphs/storage/Vertex.kt" />
+        <option value="$PROJECT_DIR$/graphs/src/main/kotlin/com/vchernogorov/graphs/algorithm/DepthFirstSearch.kt" />
+        <option value="$PROJECT_DIR$/graphs/src/main/kotlin/com/vchernogorov/graphs/algorithm/IsTree.kt" />
+        <option value="$PROJECT_DIR$/graphs/src/main/kotlin/com/vchernogorov/graphs/storage/Graph.kt" />
+        <option value="$PROJECT_DIR$/graphs/src/main/kotlin/com/vchernogorov/graphs/storage/Edge.kt" />
+        <option value="$PROJECT_DIR$/graphs/src/main/kotlin/com/vchernogorov/graphs/storage/AdjacencyMatrix.kt" />
+        <option value="$PROJECT_DIR$/graphs/src/main/kotlin/com/vchernogorov/graphs/storage/AdjacencyList.kt" />
       </list>
     </option>
   </component>
@@ -247,56 +227,7 @@
     </option>
   </component>
   <component name="MavenProjectNavigator">
-    <treeState>
-      <PATH>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="ssu-graphs" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
-        </PATH_ELEMENT>
-      </PATH>
-      <PATH>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="ssu-graphs" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="Plugins" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$PluginsNode" />
-        </PATH_ELEMENT>
-      </PATH>
-      <PATH>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="graphs" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
-        </PATH_ELEMENT>
-      </PATH>
-      <PATH>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="graphs" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="Lifecycle" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$LifecycleNode" />
-        </PATH_ELEMENT>
-      </PATH>
-    </treeState>
+    <treeState />
   </component>
   <component name="ProjectFrameBounds">
     <option name="width" value="1280" />
@@ -379,18 +310,6 @@
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="kotlin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="algorithm" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -441,10 +360,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="graphs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="storage" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1000,12 +915,12 @@
       <workItem from="1474318333565" duration="632000" />
       <workItem from="1474321414674" duration="575000" />
       <workItem from="1474873838388" duration="3724000" />
-      <workItem from="1475943839249" duration="15378000" />
+      <workItem from="1475943839249" duration="18151000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="58769000" />
+    <option name="totallyTimeSpent" value="61542000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -1060,14 +975,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/graphs/src/main/kotlin/com/vchernogorov/graphs/storage/AdjacencyMatrix.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/graphs/src/main/kotlin/com/vchernogorov/graphs/storage/AdjacencyList.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -1209,6 +1116,108 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/theory/lecture-2.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="450">
+            <caret line="30" column="57" selection-start-line="30" selection-start-column="57" selection-end-line="30" selection-end-column="57" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/theory/lecture-4.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="150">
+            <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Application.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-332">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/graphs/src/test/kotlin/com/vchernogorov/graphs/algorithm/IsTreeTest.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="8" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/graphs/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="18" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/graphs/src/main/kotlin/com/vchernogorov/graphs/storage/Vertex.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/graphs/src/main/kotlin/com/vchernogorov/graphs/storage/Graph.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/graphs/src/main/kotlin/com/vchernogorov/graphs/storage/Edge.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/graphs/src/main/kotlin/com/vchernogorov/graphs/storage/AdjacencyMatrix.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/graphs/src/main/kotlin/com/vchernogorov/graphs/storage/AdjacencyList.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/graphs/src/main/kotlin/com/vchernogorov/graphs/algorithm/Algorithm.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -1218,14 +1227,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/graphs/src/main/kotlin/com/vchernogorov/graphs/algorithm/AreIsomorphic.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="15" selection-start-line="4" selection-start-column="15" selection-end-line="4" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/graphs/src/main/kotlin/com/vchernogorov/graphs/algorithm/FindAllPaths.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="4" column="15" selection-start-line="4" selection-start-column="15" selection-end-line="4" selection-end-column="15" />
@@ -1251,6 +1252,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/graphs/src/main/kotlin/com/vchernogorov/graphs/algorithm/GraphUtils.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="1" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
+          <folding>
+            <element signature="e#43#133#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/graphs/src/main/kotlin/com/vchernogorov/graphs/algorithm/IsForest.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -1267,117 +1278,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/graphs/src/main/kotlin/com/vchernogorov/graphs/algorithm/GraphUtils.kt">
+    <entry file="file://$PROJECT_DIR$/graphs/src/main/kotlin/com/vchernogorov/graphs/algorithm/FindAllPaths.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="1" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
+        <state relative-caret-position="60">
+          <caret line="4" column="15" selection-start-line="4" selection-start-column="15" selection-end-line="4" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/graphs/src/main/kotlin/com/vchernogorov/graphs/algorithm/DepthFirstSearch.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="15" selection-start-line="5" selection-start-column="15" selection-end-line="5" selection-end-column="15" />
           <folding>
             <element signature="e#43#133#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/graphs/src/main/kotlin/com/vchernogorov/graphs/storage/AdjacencyList.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/graphs/src/main/kotlin/com/vchernogorov/graphs/storage/AdjacencyMatrix.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/graphs/src/main/kotlin/com/vchernogorov/graphs/storage/Edge.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
-          <folding>
-            <marker date="1475965488000" expanded="true" signature="179:903" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/theory/lecture-2.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="450">
-            <caret line="30" column="57" selection-start-line="30" selection-start-column="57" selection-end-line="30" selection-end-column="57" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/theory/lecture-4.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="150">
-            <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/graphs/src/main/kotlin/com/vchernogorov/graphs/storage/Graph.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/graphs/src/main/kotlin/com/vchernogorov/graphs/storage/Vertex.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="1" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Application.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-332">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="18" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/graphs/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/graphs/src/test/kotlin/com/vchernogorov/graphs/algorithm/IsTreeTest.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="1" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
