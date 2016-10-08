@@ -1,7 +1,7 @@
-package algorithm
+package com.vchernogorov.graphs.algorithm
 
-import storage.Graph
-import storage.Vertex
+import com.vchernogorov.graphs.storage.Graph
+import com.vchernogorov.graphs.storage.Vertex
 
 fun <T> isForest(graph: Graph<T>) = run(IsForest(graph))
 

@@ -1,6 +1,6 @@
-package algorithm
+package com.vchernogorov.graphs.algorithm
 
-import storage.Graph
+import com.vchernogorov.graphs.storage.Graph
 
 internal class FindMinimumSpanningTree<T>(val graph: Graph<T>): Algorithm<Graph<T>>(Graph<T>()) {
 

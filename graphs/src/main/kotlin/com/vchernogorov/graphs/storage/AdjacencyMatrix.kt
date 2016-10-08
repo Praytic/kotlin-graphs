@@ -1,11 +1,11 @@
-package storage
+package com.vchernogorov.graphs.storage
 
 /**
  * Created by vchernogorov on 07/09/16.
  */
-class AdjacencyList<T>(val storage: MutableMap<T, MutableMap<T, Number?>>) {
+class AdjacencyMatrix<T>(val storage: MutableMap<T, MutableMap<T, Number?>>) {
     constructor(): this(mutableMapOf())
-    constructor(adjacencyList: AdjacencyList<T>): this(adjacencyList.storage)
+    constructor(adjacencyMatrix: com.vchernogorov.graphs.AdjacencyMatrix<T>): this(adjacencyMatrix.storage)
     constructor(graph: Graph<T>): this() {
         for (i in graph.verticies) {
             val mutableRow = mutableMapOf<T, Number?>()

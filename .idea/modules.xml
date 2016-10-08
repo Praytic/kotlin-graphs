@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/graphs/graphs.iml" filepath="$PROJECT_DIR$/graphs/graphs.iml" />
       <module fileurl="file://$PROJECT_DIR$/ssu-graphs.iml" filepath="$PROJECT_DIR$/ssu-graphs.iml" />
     </modules>
   </component>

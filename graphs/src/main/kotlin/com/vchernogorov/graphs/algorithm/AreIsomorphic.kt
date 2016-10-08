@@ -1,6 +1,6 @@
-package algorithm
+package com.vchernogorov.graphs.algorithm
 
-import storage.Graph
+import com.vchernogorov.graphs.storage.Graph
 
 internal class AreIsomorphic<T>(val graph1: Graph<T>, val graph2: Graph<T>):
         Algorithm<Boolean>(false) {

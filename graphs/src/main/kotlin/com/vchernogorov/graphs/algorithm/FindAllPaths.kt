@@ -1,6 +1,6 @@
-package algorithm
+package com.vchernogorov.graphs.algorithm
 
-import storage.Vertex
+import com.vchernogorov.graphs.storage.Vertex
 
 internal class FindAllPaths<T>(val from: Vertex<T>, val to: Vertex<T>):
         Algorithm<Set<Vertex<T>>>(emptySet<Vertex<T>>()) {
