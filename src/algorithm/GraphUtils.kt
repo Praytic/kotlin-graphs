@@ -1,9 +1,6 @@
 package algorithm
 
-import storage.AdjacencyList
-import storage.AdjacencyMatrix
-import storage.Edge
-import storage.Graph
+import storage.*
 
 fun <T> areIsomorphic(graph1: Graph<T>, graph2: Graph<T>): Boolean {
     if (graph1 === graph2) return true
@@ -16,11 +13,14 @@ fun <T> areIsomorphic(graph1: Graph<T>, graph2: Graph<T>): Boolean {
 }
 
 fun <T> areIsomorphic(thisMatrix: AdjacencyMatrix<T>, otherMatrix: AdjacencyMatrix<T>): Boolean {
-    for (row in thisMatrix.storage.values) {
-        for (cell in row.values) {
+    val isomorphic = false
+    areIsomorphic(AdjacencyMatrix(thisMatrix), AdjacencyMatrix(otherMatrix), isomorphic)
+    return isomorphic
+}
 
-        }
-    }
+private fun <T> areIsomorphic(thisMatrix: AdjacencyMatrix<T>, otherMatrix: AdjacencyMatrix<T>, isomorphic: Boolean) {
+    if (isomorphic) return
+    // TODO: Implement
 }
 
 fun <T> getAsAdjacencyMatrix(graph: Graph<T>): AdjacencyMatrix<T> {
@@ -48,3 +48,8 @@ fun <T> getAsAdjacencyList(graph: Graph<T>): AdjacencyList<T> {
     return AdjacencyList<T>(mutableColumn)
 }
 
+fun <T> findAllPaths(from: Vertex<T>, to: Vertex<T>): Set<Vertex<T>> {
+    if (!havePath(from, to)) {
+        throw IllegalArgumentException("There is no path between 'from' and 'to' vertices");
+    }
+}
