@@ -3,10 +3,10 @@ package com.vchernogorov.graphs.storage
 /**
  * Created by vchernogorov on 06/09/16.
  */
-class Graph<T>(val verticies: MutableSet<Vertex<T>>,
+class Graph<T>(val vertices: MutableSet<Vertex<T>>,
                val edges: MutableSet<Edge<T>>) {
     constructor(): this(mutableSetOf(), mutableSetOf())
-    constructor(graph: Graph<T>): this(graph.verticies, graph.edges)
+    constructor(graph: Graph<T>): this(graph.vertices, graph.edges)
 
     fun getIncomingEdges(vertex: Vertex<T>): Set<Edge<T>> {
         return edges.filter { edge -> edge.to === vertex }.toHashSet()
@@ -17,7 +17,7 @@ class Graph<T>(val verticies: MutableSet<Vertex<T>>,
     }
 
     fun addComponent(graph: Graph<T>) {
-        verticies.addAll(graph.verticies)
+        vertices.addAll(graph.vertices)
         edges.addAll(graph.edges)
     }
 }

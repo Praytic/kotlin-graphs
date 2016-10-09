@@ -5,11 +5,11 @@ import com.vchernogorov.graphs.storage.Graph
 internal class IsForest<T>(val graph: Graph<T>): Algorithm<Boolean>(false) {
 
     override fun run() {
-        if (graph.verticies.isEmpty()) {
+        if (graph.vertices.isEmpty()) {
             return
         }
         var visitedCount = 0
-        for (vertex in graph.verticies) {
+        for (vertex in graph.vertices) {
             if (!vertex.visited) {
                 var hasCycle = false
                 val dfs = DepthFirstSearch(graph, { visitedCount++ }, { hasCycle = true }, vertex)
@@ -20,7 +20,7 @@ internal class IsForest<T>(val graph: Graph<T>): Algorithm<Boolean>(false) {
                 }
             }
         }
-        if (visitedCount === graph.verticies.size) {
+        if (visitedCount === graph.vertices.size) {
             result = true
         }
     }

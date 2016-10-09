@@ -7,7 +7,7 @@ class AdjacencyMatrix<T>(val storage: MutableMap<T, MutableMap<T, Number?>>) {
     constructor(): this(mutableMapOf())
     constructor(adjacencyMatrix: AdjacencyMatrix<T>): this(adjacencyMatrix.storage)
     constructor(graph: Graph<T>): this() {
-        for (i in graph.verticies) {
+        for (i in graph.vertices) {
             val mutableRow = mutableMapOf<T, Number?>()
             for (j in graph.getOutgoingEdges(i)) {
                 mutableRow.put(j.to.data, j.cost)

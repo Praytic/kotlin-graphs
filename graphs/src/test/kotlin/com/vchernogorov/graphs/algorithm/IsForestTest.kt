@@ -44,7 +44,7 @@ class IsForestTest {
     fun createTree(): Graph<Int> {
         val graph = Graph<Int>()
         val random = Random()
-        graph.verticies.add(Vertex<Int>(random.nextInt()))
+        graph.vertices.add(Vertex<Int>(random.nextInt()))
         return graph
     }
 
@@ -54,9 +54,9 @@ class IsForestTest {
         val vertex1 = Vertex<Int>(random.nextInt())
         val vertex2 = Vertex<Int>(random.nextInt())
         val vertex3 = Vertex<Int>(random.nextInt())
-        graph.verticies.add(vertex1)
-        graph.verticies.add(vertex2)
-        graph.verticies.add(vertex3)
+        graph.vertices.add(vertex1)
+        graph.vertices.add(vertex2)
+        graph.vertices.add(vertex3)
         val edge1 = Edge<Int>(vertex1, vertex2)
         val edge2 = Edge<Int>(vertex1, vertex3)
         val edge3 = Edge<Int>(vertex2, vertex3)

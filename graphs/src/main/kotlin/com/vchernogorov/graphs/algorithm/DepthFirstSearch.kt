@@ -5,9 +5,9 @@ import com.vchernogorov.graphs.storage.Vertex
 
 internal class DepthFirstSearch<T>(val graph: Graph<T>, val onFindUnvisitedVertex: (Vertex<T>) -> Unit = {},
                                    val onFindVisitedVertex: (Vertex<T>) -> Unit = {},
-                                   var startVertex: Vertex<T> = graph.verticies.first()): Algorithm<Unit>(Unit) {
+                                   var startVertex: Vertex<T> = graph.vertices.first()): Algorithm<Unit>(Unit) {
     override fun run() {
-        if (graph.verticies.isNotEmpty()) {
+        if (graph.vertices.isNotEmpty()) {
             fun recursiveDfs(currentVertex: Vertex<T>) {
                 currentVertex.visited = true
                 onFindUnvisitedVertex(currentVertex)
