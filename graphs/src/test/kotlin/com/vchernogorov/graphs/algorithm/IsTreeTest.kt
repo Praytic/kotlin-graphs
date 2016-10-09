@@ -30,7 +30,7 @@ class IsTreeTest {
         graph.verticies.add(vertex2)
         val edge = Edge<Int>(vertex1, vertex2)
         graph.edges.add(edge)
-        Assertions.assertFalse(isTree(graph))
+        Assertions.assertTrue(isTree(graph))
     }
 
     @Test
