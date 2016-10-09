@@ -15,4 +15,9 @@ class Graph<T>(val verticies: MutableSet<Vertex<T>>,
     fun getOutgoingEdges(vertex: Vertex<T>): Set<Edge<T>> {
         return edges.filter { edge -> edge.from === vertex }.toHashSet()
     }
+
+    fun addComponent(graph: Graph<T>) {
+        verticies.addAll(graph.verticies)
+        edges.addAll(graph.edges)
+    }
 }
