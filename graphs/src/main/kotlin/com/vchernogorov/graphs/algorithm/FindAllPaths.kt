@@ -4,7 +4,7 @@ import com.vchernogorov.graphs.storage.Graph
 import com.vchernogorov.graphs.storage.Vertex
 
 internal class FindAllPaths<T>(val graph: Graph<T>, val from: Vertex<T>, val to: Vertex<T>):
-        Algorithm<Set<Vertex<T>>>(emptySet<Vertex<T>>()) {
+        Algorithm<MutableSet<Set<Vertex<T>>>>(mutableSetOf()) {
 
     override fun run() {
         if (havePath()) {
@@ -19,6 +19,11 @@ internal class FindAllPaths<T>(val graph: Graph<T>, val from: Vertex<T>, val to:
     }
 
     fun findAllPaths() {
-        // TODO: Implement
+        val currentPath = mutableSetOf<Vertex<T>>()
+        val dfs = DepthFirstSearch<T>(graph, { vertex -> {
+            currentPath.add(vertex)
+            if (vertex == to) result.add(currentPath)
+        }}, { vertex -> currentPath.remove(vertex)}, from)
+        dfs.run()
     }
 }

@@ -15,9 +15,7 @@ internal class DepthFirstSearch<T>(val graph: Graph<T>, val onFindUnvisitedVerte
                     if (!edge.to.visited) {
                         recursiveDfs(edge.to)
                     }
-                    else {
-                        onFindVisitedVertex(currentVertex)
-                    }
+                    onFindVisitedVertex(currentVertex)
                 }
             }
             recursiveDfs(startVertex)
