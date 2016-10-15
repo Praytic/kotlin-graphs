@@ -57,8 +57,10 @@ class FindAllPathsTest {
         val vertex2 = Vertex<Int>(1)
         graph.vertices.add(vertex1)
         graph.vertices.add(vertex2)
-        val edge = Edge<Int>(vertex1, vertex2)
-        graph.edges.add(edge)
-        Assertions.assertEquals(1, findAllPaths(graph, vertex1, vertex2).size)
+        val edge1 = Edge<Int>(vertex1, vertex2, 0)
+        val edge2 = Edge<Int>(vertex1, vertex2, 1)
+        graph.edges.add(edge1)
+        graph.edges.add(edge2)
+        Assertions.assertEquals(2, findAllPaths(graph, vertex1, vertex2).size)
     }
 }
