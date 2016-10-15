@@ -8,11 +8,12 @@ internal class DepthFirstSearch<T>(val graph: Graph<T>, val onFindUnvisitedVerte
                                    var startVertex: Vertex<T> = graph.vertices.first()): Algorithm<Unit>(Unit) {
     override fun run() {
         if (graph.vertices.isNotEmpty()) {
+            val visitedVertices = graph.getVisitedMap()
             fun recursiveDfs(currentVertex: Vertex<T>) {
-                currentVertex.visited = true
+                visitedVertices[currentVertex] = true
                 onFindUnvisitedVertex(currentVertex)
                 for (edge in graph.getOutgoingEdges(currentVertex)) {
-                    if (!edge.to.visited) {
+                    if (!visitedVertices[edge.to]!!) {
                         recursiveDfs(edge.to)
                     }
                     onFindVisitedVertex(currentVertex)

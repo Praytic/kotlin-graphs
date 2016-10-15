@@ -20,4 +20,10 @@ class Graph<T>(val vertices: MutableSet<Vertex<T>>,
         vertices.addAll(graph.vertices)
         edges.addAll(graph.edges)
     }
+
+    fun getVisitedMap(): MutableMap<Vertex<T>, Boolean> {
+        val visitedVertices = mutableMapOf<Vertex<T>, Boolean>()
+        visitedVertices.putAll(vertices.associateBy({ it }, { false }))
+        return visitedVertices
+    }
 }

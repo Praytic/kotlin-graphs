@@ -9,10 +9,12 @@ internal class IsForest<T>(val graph: Graph<T>): Algorithm<Boolean>(false) {
             return
         }
         var visitedCount = 0
+        val visitedVertices = graph.getVisitedMap()
         for (vertex in graph.vertices) {
-            if (!vertex.visited) {
+            if (!visitedVertices[vertex]!!) {
                 var hasCycle = false
-                val dfs = DepthFirstSearch(graph, { visitedCount++ }, { hasCycle = true }, vertex)
+                val dfs = DepthFirstSearch(graph, { vertex -> visitedCount++
+                    visitedVertices[vertex] = true }, { hasCycle = true }, vertex)
                 dfs.run()
                 if (hasCycle) {
                     result = false

@@ -20,10 +20,9 @@ internal class FindAllPaths<T>(val graph: Graph<T>, val from: Vertex<T>, val to:
 
     fun findAllPaths() {
         val currentPath = mutableSetOf<Vertex<T>>()
-        val dfs = DepthFirstSearch<T>(graph, { vertex -> {
-            currentPath.add(vertex)
+        val dfs = DepthFirstSearch<T>(graph, { vertex -> currentPath.add(vertex)
             if (vertex == to) result.add(currentPath)
-        }}, { vertex -> currentPath.remove(vertex)}, from)
+        }, { vertex -> currentPath.remove(vertex)}, from)
         dfs.run()
     }
 }

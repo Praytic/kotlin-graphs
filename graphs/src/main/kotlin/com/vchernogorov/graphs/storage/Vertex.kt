@@ -1,8 +1,7 @@
 package com.vchernogorov.graphs.storage;
 
-class Vertex<T>(var data: T, var visited: Boolean) {
-    constructor(data: T): this(data, false)
-    constructor(vertex: Vertex<T>): this(vertex.data, vertex.visited)
+class Vertex<T>(var data: T) {
+    constructor(vertex: Vertex<T>): this(vertex.data)
 
     override fun equals(other: Any?): Boolean {
         if (this === other) return true
