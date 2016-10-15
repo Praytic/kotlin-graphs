@@ -1,10 +1,12 @@
 package com.vchernogorov.graphs.algorithm
 
+import com.vchernogorov.graphs.storage.Edge
 import com.vchernogorov.graphs.storage.Graph
 import com.vchernogorov.graphs.storage.Vertex
+import java.util.*
 
 internal class FindAllPaths<T>(val graph: Graph<T>, val from: Vertex<T>, val to: Vertex<T>):
-        Algorithm<MutableSet<Set<Vertex<T>>>>(mutableSetOf()) {
+        Algorithm<MutableSet<Set<Edge<T>>>>(mutableSetOf()) {
 
     override fun run() {
         if (havePath()) {
@@ -19,10 +21,13 @@ internal class FindAllPaths<T>(val graph: Graph<T>, val from: Vertex<T>, val to:
     }
 
     fun findAllPaths() {
-        val currentPath = mutableSetOf<Vertex<T>>()
-        val dfs = DepthFirstSearch<T>(graph, { vertex -> currentPath.add(vertex)
-            if (vertex == to) result.add(currentPath)
-        }, { vertex -> currentPath.remove(vertex)}, from)
+        val currentPath = mutableSetOf<Edge<T>>()
+        val dfs = DepthFirstSearch(graph, from)
+        dfs.onFindUnvisitedVertex = { vertex, edge -> if (edge != null) currentPath.add(edge) }
+        dfs.onFindVisitedVertex = { vertex, edge ->
+            if (vertex == to) result.add(HashSet(currentPath))
+            currentPath.remove(edge)
+        }
         dfs.run()
     }
 }

@@ -14,6 +14,7 @@ class Edge<T>(val from: Vertex<T>,
 
         if (from != other.from) return false
         if (to != other.to) return false
+        if (cost != other.cost) return false
 
         return true
     }
