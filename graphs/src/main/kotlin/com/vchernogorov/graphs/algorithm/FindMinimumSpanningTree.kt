@@ -5,6 +5,10 @@ import com.vchernogorov.graphs.storage.Graph
 internal class FindMinimumSpanningTree<T>(val graph: Graph<T>): Algorithm<Graph<T>>(Graph<T>()) {
 
     override fun run() {
-        throw UnsupportedOperationException()
+        algorithmBoruvka()
+    }
+
+    fun algorithmBoruvka() {
+        // TODO
     }
 }
