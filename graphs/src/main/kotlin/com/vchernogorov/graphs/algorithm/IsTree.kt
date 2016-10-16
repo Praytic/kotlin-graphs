@@ -8,7 +8,7 @@ internal class IsTree<T>(val graph: Graph<T>): Algorithm<Boolean>(false) {
         if (graph.vertices.size - 1 === graph.edges.size) {
             var visitedCount = 0
             val dfs = DepthFirstSearch(graph)
-            dfs.onFindUnvisitedVertex = { vertex, edge -> visitedCount++ }
+            dfs.onEnterUnvisitedVertex = { vertex, edge -> visitedCount++ }
             dfs.run()
             if (visitedCount === graph.vertices.size) {
                 result = true

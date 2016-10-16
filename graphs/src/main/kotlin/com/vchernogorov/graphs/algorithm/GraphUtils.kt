@@ -11,7 +11,7 @@ fun <T, R> areIsomorphic(graph1: Graph<T>, graph2: Graph<R>) = run(AreIsomorphic
 
 fun <T> findAllPaths(graph: Graph<T>, from: Vertex<T>, to: Vertex<T>) = run(FindAllPaths(graph, from, to))
 
-fun <T> findAllShortestCycles(graph: Graph<T>) = run(FindAllShortestCycles(graph))
+fun <T> findAllCycles(graph: Graph<T>) = run(FindAllCycles(graph))
 
 fun <T> findMinimumSpanningTree(graph: Graph<T>) = run(FindMinimumSpanningTree(graph))
 

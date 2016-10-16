@@ -14,7 +14,7 @@ internal class IsForest<T>(val graph: Graph<T>): Algorithm<Boolean>(false) {
             if (!visitedVertices[vertex]!!) {
                 var hasCycle = false
                 val dfs = DepthFirstSearch(graph, vertex)
-                dfs.onFindUnvisitedVertex = { v, e -> visitedCount++; visitedVertices[vertex] = true }
+                dfs.onEnterUnvisitedVertex = { v, e -> visitedCount++; visitedVertices[vertex] = true }
                 dfs.onFindVisitedVertex = { v, e -> hasCycle = true }
                 dfs.run()
                 if (hasCycle) {
