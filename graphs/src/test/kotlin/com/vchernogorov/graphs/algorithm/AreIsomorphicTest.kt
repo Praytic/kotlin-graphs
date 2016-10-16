@@ -49,6 +49,6 @@ class AreIsomorphicTest {
         graph1.edges.add(edge1)
         Assertions.assertFalse(areIsomorphic(graph1, graph2))
         graph2.edges.add(edge2)
-//        Assertions.assertTrue(areIsomorphic(graph1, graph2))
+        Assertions.assertTrue(areIsomorphic(graph1, graph2))
     }
 }
