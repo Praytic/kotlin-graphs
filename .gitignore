@@ -41,3 +41,4 @@ fabric.properties
 hs_err_pid*
 
 theory
+**/*.iml
