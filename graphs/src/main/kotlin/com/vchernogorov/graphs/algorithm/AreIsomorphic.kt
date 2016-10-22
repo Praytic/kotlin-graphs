@@ -2,13 +2,14 @@ package com.vchernogorov.graphs.algorithm
 
 import com.vchernogorov.graphs.storage.AdjacencyMatrix
 import com.vchernogorov.graphs.storage.Graph
+import com.vchernogorov.graphs.storage.Permutation
 
 internal class AreIsomorphic<T, R>(val graph1: Graph<T>, val graph2: Graph<R>):
         Algorithm<Boolean>(false) {
 
     val size = graph1.vertices.size
-    val incidenceDoubleArray1 = convertToIncidenceDoubleArray(AdjacencyMatrix(graph1))
-    val incidenceDoubleArray2 = convertToIncidenceDoubleArray(AdjacencyMatrix(graph2))
+    val incidenceDoubleArray1 = AdjacencyMatrix(graph1).getIncidenceMatrix()
+    val incidenceDoubleArray2 = AdjacencyMatrix(graph2).getIncidenceMatrix()
 
     override fun run() {
         if (graph1 === graph2) {
@@ -40,7 +41,7 @@ internal class AreIsomorphic<T, R>(val graph1: Graph<T>, val graph2: Graph<R>):
             graph1.storage.values.any { row -> row.size != graph1.storage.size } ||
             graph2.storage.values.any { row -> row.size != graph2.storage.size }) result = false
         val permutation = Permutation(size)
-        val incidenceDoubleArray = convertToIncidenceDoubleArray(AdjacencyMatrix(graph2))
+        val incidenceDoubleArray = AdjacencyMatrix(graph2).getIncidenceMatrix()
         while (true) {
             var ready = true
             for (i in 0..size - 1) {
@@ -65,19 +66,5 @@ internal class AreIsomorphic<T, R>(val graph1: Graph<T>, val graph2: Graph<R>):
                 }
             }
         }
-    }
-
-    fun <R> convertToIncidenceDoubleArray(matrix: AdjacencyMatrix<R>): Array<IntArray> {
-        val matrixSize = matrix.storage.size
-        val doubleArray = Array<IntArray>(matrixSize, { IntArray(matrixSize, { 0 }) })
-        var i = 0
-        for (row in matrix.storage.values) {
-            var j = 0
-            for (value in row.values) {
-                if (value != null) doubleArray[i][j++] = 1
-            }
-            i++
-        }
-        return doubleArray
     }
 }
