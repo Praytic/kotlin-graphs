@@ -1,4 +1,4 @@
-package com.vchernogorov.graphs.algorithm
+package com.vchernogorov.graphs.storage
 
 import java.util.*
 
