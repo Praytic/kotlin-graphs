@@ -3,26 +3,30 @@ package com.vchernogorov.graphs.algorithm
 import java.util.*
 
 class Permutation(val size: Int,
-        val permutation: MutableList<Int> = {
-            val array = Array<Int>(size, { i -> i + 1 })
-            mutableListOf(*array, 0) }.invoke(),
-        val lastPermutation: List<Int> = {
-            val array = Array<Int>(size, { i -> i + 1 }).reversedArray()
-            mutableListOf(*array, 0) }.invoke()) {
+        var current: MutableList<Int> = {
+            val array = Array<Int>(size, { it })
+            mutableListOf(*array) }.invoke(),
+        val last: List<Int> = {
+            val array = Array<Int>(size, { it }).reversedArray()
+            mutableListOf(*array) }.invoke()) {
 
-    fun nextPermutation() {
-        val permutationSize = permutation.size - 2
+    fun next(): List<Int> {
+        val perm = ArrayList(current)
+        perm.add(Int.MIN_VALUE)
+        val permutationSize = perm.size - 2
 
         var i = permutationSize
-        while (i >= 0 && permutation[i] > permutation[i + 1]) i--
-        if (i < 0) return
+        while (i >= 0 && perm[i] > perm[i + 1]) i--
+        if (i < 0) return current
 
         var j = permutationSize
-        while (permutation[i] > permutation[j]) j--
-        Collections.swap(permutation, i, j)
+        while (perm[i] > perm[j]) j--
+        Collections.swap(perm, i, j)
 
         var k = i + 1
         var r = permutationSize
-        while (r > k) Collections.swap(permutation, r--, k++)
+        while (r > k) Collections.swap(perm, r--, k++)
+        current = perm.subList(0, size)
+        return current
     }
 }

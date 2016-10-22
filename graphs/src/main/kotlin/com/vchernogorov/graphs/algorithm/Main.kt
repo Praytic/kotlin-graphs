@@ -2,8 +2,8 @@ package com.vchernogorov.graphs.algorithm
 
 fun main(args: Array<String>) {
     val permutation = Permutation(6);
-    while (permutation.permutation != permutation.lastPermutation) {
-        permutation.nextPermutation()
-        println(permutation.permutation)
+    while (permutation.current != permutation.last) {
+        permutation.next()
+        println(permutation.current)
     }
 }
