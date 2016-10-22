@@ -6,6 +6,9 @@ import com.vchernogorov.graphs.storage.Graph
 internal class AreIsomorphic<T, R>(val graph1: Graph<T>, val graph2: Graph<R>):
         Algorithm<Boolean>(false) {
 
+    val incidenceDoubleArray1 = convertToIncidenceDoubleArray(AdjacencyMatrix(graph1))
+    val incidenceDoubleArray2 = convertToIncidenceDoubleArray(AdjacencyMatrix(graph2))
+
     override fun run() {
         if (graph1 === graph2) {
             result = true
@@ -26,6 +29,8 @@ internal class AreIsomorphic<T, R>(val graph1: Graph<T>, val graph2: Graph<R>):
         else {
             areIsomorphic(AdjacencyMatrix(graph1), AdjacencyMatrix(graph2))
         }
+        var sfa = IntArray(23)
+
     }
 
     fun areIsomorphic(graph1: AdjacencyMatrix<T>, graph2: AdjacencyMatrix<R>) {
@@ -35,23 +40,27 @@ internal class AreIsomorphic<T, R>(val graph1: Graph<T>, val graph2: Graph<R>):
         if (graph1.storage.size != graph2.storage.size ||
             graph1.storage.values.any { row -> row.size != graph1.storage.size } ||
             graph2.storage.values.any { row -> row.size != graph2.storage.size }) result = false
-        recursive(convertToIncidenceDoubleArray(graph1), convertToIncidenceDoubleArray(graph2), 0, 0)
+        var count = 0
+        val permutation = incidenceDoubleArray2.map { count++ }.toIntArray()
+        recursive(incidenceDoubleArray2, permutation)
     }
 
-    fun recursive(matrix1: Array<Array<Int>>, matrix2: Array<Array<Int>>, mi: Int, mj: Int) {
+    fun recursive(incidenceDoubleArray: Array<IntArray>, permutation: IntArray) {
         if (result) return
         var complete = true
-        for (i in 0..matrix1.size) {
-            for (j in 0..matrix2.size) {
-                complete = matrix1[i][j] == matrix2[i][j]
+        for (i in 0..incidenceDoubleArray1.size) {
+            for (j in 0..incidenceDoubleArray.size) {
+                complete = incidenceDoubleArray1[i][j] == incidenceDoubleArray[i][j]
             }
         }
         if (complete) {
             result = true
             return
         }
-        // TODO Implement
+
     }
+
+
 
     fun switchColumns(matrix: Array<Array<Int>>, column1: Int, column2: Int): Array<Array<Int>> {
         for (i in 0..matrix.size) {
@@ -71,10 +80,9 @@ internal class AreIsomorphic<T, R>(val graph1: Graph<T>, val graph2: Graph<R>):
         return matrix
     }
 
-    fun <R> convertToIncidenceDoubleArray(matrix: AdjacencyMatrix<R>): Array<Array<Int>> {
+    fun <R> convertToIncidenceDoubleArray(matrix: AdjacencyMatrix<R>): Array<IntArray> {
         val matrixSize = matrix.storage.size
-        val array = Array<Int>(matrixSize, { 0 })
-        val doubleArray = Array<Array<Int>>(matrixSize, { array })
+        val doubleArray = Array<IntArray>(matrixSize, { IntArray(matrixSize, { 0 }) })
         var i = 0
         for (row in matrix.storage.values) {
             var j = 0
