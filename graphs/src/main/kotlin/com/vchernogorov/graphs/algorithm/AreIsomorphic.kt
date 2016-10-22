@@ -6,6 +6,7 @@ import com.vchernogorov.graphs.storage.Graph
 internal class AreIsomorphic<T, R>(val graph1: Graph<T>, val graph2: Graph<R>):
         Algorithm<Boolean>(false) {
 
+    val size = graph1.vertices.size
     val incidenceDoubleArray1 = convertToIncidenceDoubleArray(AdjacencyMatrix(graph1))
     val incidenceDoubleArray2 = convertToIncidenceDoubleArray(AdjacencyMatrix(graph2))
 
@@ -29,8 +30,6 @@ internal class AreIsomorphic<T, R>(val graph1: Graph<T>, val graph2: Graph<R>):
         else {
             areIsomorphic(AdjacencyMatrix(graph1), AdjacencyMatrix(graph2))
         }
-        var sfa = IntArray(23)
-
     }
 
     fun areIsomorphic(graph1: AdjacencyMatrix<T>, graph2: AdjacencyMatrix<R>) {
@@ -40,44 +39,32 @@ internal class AreIsomorphic<T, R>(val graph1: Graph<T>, val graph2: Graph<R>):
         if (graph1.storage.size != graph2.storage.size ||
             graph1.storage.values.any { row -> row.size != graph1.storage.size } ||
             graph2.storage.values.any { row -> row.size != graph2.storage.size }) result = false
-        var count = 0
-        val permutation = incidenceDoubleArray2.map { count++ }.toIntArray()
-        recursive(incidenceDoubleArray2, permutation)
-    }
-
-    fun recursive(incidenceDoubleArray: Array<IntArray>, permutation: IntArray) {
-        if (result) return
-        var complete = true
-        for (i in 0..incidenceDoubleArray1.size) {
-            for (j in 0..incidenceDoubleArray.size) {
-                complete = incidenceDoubleArray1[i][j] == incidenceDoubleArray[i][j]
+        val permutation = Permutation(size)
+        val incidenceDoubleArray = convertToIncidenceDoubleArray(AdjacencyMatrix(graph2))
+        while (true) {
+            var ready = true
+            for (i in 0..size - 1) {
+                for (j in 0..size - 1) {
+                    if (incidenceDoubleArray[i][j] != incidenceDoubleArray1[i][j]) {
+                        ready = false
+                        break
+                    }
+                }
+                if (!ready) break
+            }
+            if (ready) {
+                result = true
+                return
+            }
+            if (permutation.last == permutation.current) return
+            val perm = permutation.next()
+            for (i in 0..size - 1) {
+                for (j in 0..size - 1) {
+                    incidenceDoubleArray[i][j] = incidenceDoubleArray2[i][perm[j]]
+                    incidenceDoubleArray[i][j] = incidenceDoubleArray2[perm[i]][j]
+                }
             }
         }
-        if (complete) {
-            result = true
-            return
-        }
-
-    }
-
-
-
-    fun switchColumns(matrix: Array<Array<Int>>, column1: Int, column2: Int): Array<Array<Int>> {
-        for (i in 0..matrix.size) {
-            val temp = matrix[column1][i]
-            matrix[column1][i] = matrix[column2][i]
-            matrix[column2][i] = temp
-        }
-        return matrix
-    }
-
-    fun switchRows(matrix: Array<Array<Int>>, row1: Int, row2: Int): Array<Array<Int>> {
-        for (i in 0..matrix.size) {
-            val temp = matrix[i][row1]
-            matrix[row1][i] = matrix[row2][i]
-            matrix[row2][i] = temp
-        }
-        return matrix
     }
 
     fun <R> convertToIncidenceDoubleArray(matrix: AdjacencyMatrix<R>): Array<IntArray> {
@@ -87,22 +74,10 @@ internal class AreIsomorphic<T, R>(val graph1: Graph<T>, val graph2: Graph<R>):
         for (row in matrix.storage.values) {
             var j = 0
             for (value in row.values) {
-                if (value != null) doubleArray[i][j] = 1
-                j++
+                if (value != null) doubleArray[i][j++] = 1
             }
             i++
         }
         return doubleArray
-    }
-
-    /**
-     * Randomly maps matrix's elements to the current elements.
-     */
-    fun mapMatrixKeys(matrix1: AdjacencyMatrix<T>, matrix2: AdjacencyMatrix<R>): Map<T, R> {
-        var count = 0
-        val numberedMap1 = matrix2.storage.entries.associateBy( { count++ }, { it.key })
-        count = 0
-        val numberedMap2 = matrix1.storage.entries.associateBy( { count++ }, { it.key })
-        return numberedMap1.entries.associateBy({map -> numberedMap2[map.key]!!}, {map -> map.value})
     }
 }
