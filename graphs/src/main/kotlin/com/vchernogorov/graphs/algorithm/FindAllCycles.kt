@@ -4,7 +4,9 @@ import com.vchernogorov.graphs.storage.Edge
 import com.vchernogorov.graphs.storage.Graph
 import com.vchernogorov.graphs.storage.Vertex
 
-internal class FindAllCycles<T>(val graph: Graph<T>): Algorithm<Set<Set<Vertex<T>>>>(mutableSetOf()) {
+internal class FindAllCycles<T>(graph: Graph<T>) : GraphAlgorithm<T, Set<Set<Vertex<T>>>>(graph) {
+
+    override var result = setOf<Set<Vertex<T>>>()
 
     override fun run() {
         if (hasCycles()) {
