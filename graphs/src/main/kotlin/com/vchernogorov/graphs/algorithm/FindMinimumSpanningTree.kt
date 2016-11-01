@@ -2,13 +2,15 @@ package com.vchernogorov.graphs.algorithm
 
 import com.vchernogorov.graphs.storage.Graph
 
-internal class FindMinimumSpanningTree<T>(val graph: Graph<T>): Algorithm<Graph<T>>(Graph<T>()) {
+internal class FindMinimumSpanningTree<T>(graph: Graph<T>) : GraphAlgorithm<T, Graph<T>>(graph) {
+
+    override var result = Graph<T>()
 
     override fun run() {
-        algorithmBoruvka()
+        boruvka()
     }
 
-    fun algorithmBoruvka() {
+    fun boruvka() {
         // TODO
     }
 }

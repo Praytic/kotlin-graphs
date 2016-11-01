@@ -2,7 +2,9 @@ package com.vchernogorov.graphs.algorithm
 
 import com.vchernogorov.graphs.storage.Graph
 
-internal class IsTree<T>(val graph: Graph<T>): Algorithm<Boolean>(false) {
+internal class IsTree<T>(graph: Graph<T>): GraphAlgorithm<T, Boolean>(graph) {
+
+    override var result = false
 
     override fun run() {
         if (graph.vertices.size - 1 === graph.edges.size) {

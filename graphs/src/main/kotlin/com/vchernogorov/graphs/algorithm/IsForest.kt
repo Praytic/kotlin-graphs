@@ -2,7 +2,9 @@ package com.vchernogorov.graphs.algorithm
 
 import com.vchernogorov.graphs.storage.Graph
 
-internal class IsForest<T>(val graph: Graph<T>): Algorithm<Boolean>(false) {
+internal class IsForest<T>(graph: Graph<T>) : GraphAlgorithm<T, Boolean>(graph) {
+
+    override var result = false
 
     override fun run() {
         if (graph.vertices.isEmpty()) {

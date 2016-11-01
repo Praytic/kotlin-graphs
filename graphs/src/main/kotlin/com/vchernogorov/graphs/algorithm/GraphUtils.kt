@@ -9,7 +9,9 @@ fun <T> isTree(graph: Graph<T>) = run(IsTree(graph))
 
 fun <T, R> areIsomorphic(graph1: Graph<T>, graph2: Graph<R>) = run(AreIsomorphic(graph1, graph2))
 
-fun <T> findAllPaths(graph: Graph<T>, from: Vertex<T>, to: Vertex<T>) = run(FindAllPaths(graph, from, to))
+fun <T> findAllPathsWithDfs(graph: Graph<T>, from: Vertex<T>, to: Vertex<T>) = run(FindAllPathsWithDfs(graph, from, to))
+
+fun <T> findAllPathsWithDijkstra(graph: Graph<T>, from: Vertex<T>, to: Vertex<T>) = run(FindAllPathsWithDijkstra(graph, from, to))
 
 fun <T> findAllCycles(graph: Graph<T>) = run(FindAllCycles(graph))
 

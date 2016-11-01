@@ -4,32 +4,33 @@ import com.vchernogorov.graphs.storage.AdjacencyMatrix
 import com.vchernogorov.graphs.storage.Graph
 import com.vchernogorov.graphs.storage.Permutation
 
-internal class AreIsomorphic<T, R>(val graph1: Graph<T>, val graph2: Graph<R>):
-        Algorithm<Boolean>(false) {
+internal class AreIsomorphic<T, R>(graph: Graph<T>, val graphToCompare: Graph<R>)
+    : GraphAlgorithm<T, Boolean>(graph) {
 
-    val size = graph1.vertices.size
-    val incidenceDoubleArray1 = AdjacencyMatrix(graph1).getIncidenceMatrix()
-    val incidenceDoubleArray2 = AdjacencyMatrix(graph2).getIncidenceMatrix()
+    override var result = false
+    val size = graph.vertices.size
+    val incidenceDoubleArray1 = AdjacencyMatrix(graph).getIncidenceMatrix()
+    val incidenceDoubleArray2 = AdjacencyMatrix(graphToCompare).getIncidenceMatrix()
 
     override fun run() {
-        if (graph1 === graph2) {
+        if (graph === graphToCompare) {
             result = true
         }
-        else if (graph1.vertices.size == 0 && graph2.vertices.size == 0) {
+        else if (graph.vertices.size == 0 && graphToCompare.vertices.size == 0) {
             result = true
         }
-        else if (graph1.vertices.size == graph2.vertices.size &&
-                graph1.edges.size == 0 && graph2.edges.size == 0) {
+        else if (graph.vertices.size == graphToCompare.vertices.size &&
+                graph.edges.size == 0 && graphToCompare.edges.size == 0) {
             result = true
         }
-        else if (graph1.vertices.size != graph2.vertices.size) {
+        else if (graph.vertices.size != graphToCompare.vertices.size) {
             result = false
         }
-        else if (graph1.edges.size != graph2.edges.size) {
+        else if (graph.edges.size != graphToCompare.edges.size) {
             result = false
         }
         else {
-            areIsomorphic(AdjacencyMatrix(graph1), AdjacencyMatrix(graph2))
+            areIsomorphic(AdjacencyMatrix(graph), AdjacencyMatrix(graphToCompare))
         }
     }
 

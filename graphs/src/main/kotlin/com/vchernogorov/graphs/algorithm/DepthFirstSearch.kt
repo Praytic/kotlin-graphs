@@ -4,15 +4,18 @@ import com.vchernogorov.graphs.storage.Edge
 import com.vchernogorov.graphs.storage.Graph
 import com.vchernogorov.graphs.storage.Vertex
 
-internal class DepthFirstSearch<T>(val graph: Graph<T>,
+internal class DepthFirstSearch<T>(graph: Graph<T>,
                                    val startVertex: Vertex<T>,
                                    var onEnterUnvisitedVertex: (Vertex<T>, Edge<T>?) -> Unit,
                                    var onFindVisitedVertex: (Vertex<T>, Edge<T>) -> Unit,
-                                   var onExitVisitedVertex: (Vertex<T>, Edge<T>?) -> Unit):
-        Algorithm<Unit>(Unit) {
+                                   var onExitVisitedVertex: (Vertex<T>, Edge<T>?) -> Unit)
+    : GraphAlgorithm<T, Unit>(graph) {
+
     constructor(graph: Graph<T>): this(graph, graph.vertices.first())
     constructor(graph: Graph<T>, startVertex: Vertex<T>): this(graph, startVertex,
             { vertex, edge -> }, { vertex, edge -> }, { vertex, edge -> })
+
+    override var result = Unit
 
     override fun run() {
         if (!graph.vertices.isNotEmpty()) return
