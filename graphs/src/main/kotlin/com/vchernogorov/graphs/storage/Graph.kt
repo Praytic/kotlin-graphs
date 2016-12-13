@@ -23,4 +23,8 @@ class Graph<T>(val vertices: MutableSet<Vertex<T>>,
         visitedVertices.putAll(vertices.associateBy({ it }, { false }))
         return visitedVertices
     }
+
+    fun findEdge(vertex1: Vertex<T>, vertex2: Vertex<T>): Edge<T>? {
+        return edges.find { it.from == vertex1 && it.to == vertex2 }
+    }
 }

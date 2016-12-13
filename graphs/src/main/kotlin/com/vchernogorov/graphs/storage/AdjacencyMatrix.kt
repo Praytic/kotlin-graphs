@@ -1,15 +1,18 @@
 package com.vchernogorov.graphs.storage
 
-data class AdjacencyMatrix<T>(val storage: MutableMap<T, MutableMap<T, Number?>>) {
+import com.vchernogorov.graphs.algorithm.INF
+
+data class AdjacencyMatrix<T>(val storage: MutableMap<Vertex<T>, MutableMap<Vertex<T>, Int?>>) {
     constructor(): this(mutableMapOf())
     constructor(adjacencyMatrix: AdjacencyMatrix<T>): this(adjacencyMatrix.storage)
     constructor(graph: Graph<T>): this() {
         for (i in graph.vertices) {
-            val mutableRow = mutableMapOf<T, Number?>()
+            val mutableRow = mutableMapOf<Vertex<T>, Int?>()
+            mutableRow.put(i, 0)
             for (j in graph.getOutgoingEdges(i)) {
-                mutableRow.put(j.to.data, j.cost)
+                mutableRow.put(j.to, j.cost)
             }
-            storage.put(i.data, mutableRow)
+            storage.put(i, mutableRow)
         }
     }
 
@@ -25,5 +28,9 @@ data class AdjacencyMatrix<T>(val storage: MutableMap<T, MutableMap<T, Number?>>
             i++
         }
         return doubleArray
+    }
+
+    operator fun get(i: Vertex<T>, j: Vertex<T>): Int {
+        return storage.get(i)?.get(j) ?: INF
     }
 }

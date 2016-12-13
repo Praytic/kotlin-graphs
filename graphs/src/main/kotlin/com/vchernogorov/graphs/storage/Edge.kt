@@ -2,7 +2,7 @@ package com.vchernogorov.graphs.storage;
 
 class Edge<T>(val from: Vertex<T>,
               val to: Vertex<T>,
-              var cost: Number?) {
+              val cost: Int = 0) {
     constructor(from: Vertex<T>, to: Vertex<T>): this(from, to, 0)
     constructor(edge: Edge<T>): this(edge.from, edge.to, edge.cost)
 
