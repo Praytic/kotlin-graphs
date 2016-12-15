@@ -16,30 +16,30 @@ internal class DepthFirstSearch<T>(graph: Graph<T>,
             { vertex, edge -> }, { vertex, edge -> }, { vertex, edge -> })
 
     override var result = Unit
+    val visitedVertices = graph.getVisitedMap()
 
     override fun run() {
-        if (!graph.vertices.isNotEmpty()) return
+        if (graph.vertices.isEmpty()) return
         if (graph.getOutgoingEdges(startVertex).isEmpty()) {
             onEnterUnvisitedVertex(startVertex, null)
             return
         }
-        val visitedVertices = graph.getVisitedMap()
-        fun recursiveDfs(currentVertex: Vertex<T>, currentEdge: Edge<T>?) {
-            visitedVertices[currentVertex] = true
-            onEnterUnvisitedVertex(currentVertex, currentEdge)
-            for (edge in graph.getOutgoingEdges(currentVertex)) {
-                val nextVertex = edge.to
-                if (!visitedVertices[nextVertex]!!) {
-                    recursiveDfs(nextVertex, edge)
-                }
-                else {
-                    onFindVisitedVertex(nextVertex, edge)
-                }
-                visitedVertices[nextVertex] = false
-            }
-            onExitVisitedVertex(currentVertex, currentEdge)
-        }
-
         recursiveDfs(startVertex, null)
+    }
+
+    fun recursiveDfs(currentVertex: Vertex<T>, currentEdge: Edge<T>?) {
+        visitedVertices[currentVertex] = true
+        onEnterUnvisitedVertex(currentVertex, currentEdge)
+        for (edge in graph.getOutgoingEdges(currentVertex)) {
+            val nextVertex = edge.to
+            if (!visitedVertices[nextVertex]!!) {
+                recursiveDfs(nextVertex, edge)
+            }
+            else {
+                onFindVisitedVertex(nextVertex, edge)
+            }
+            visitedVertices[nextVertex] = false
+        }
+        onExitVisitedVertex(currentVertex, currentEdge)
     }
 }

@@ -11,7 +11,9 @@ internal class FindAllPathsWithDfs<T>(graph: Graph<T>, from: Vertex<T>, to: Vert
     override fun findAllPaths() {
         val currentPath = mutableSetOf<Edge<T>>()
         val dfs = DepthFirstSearch(graph, from)
-        dfs.onEnterUnvisitedVertex = { vertex, edge -> if (edge != null) currentPath.add(edge) }
+        dfs.onEnterUnvisitedVertex = { vertex, edge ->
+            if (edge != null) currentPath.add(edge)
+        }
         dfs.onExitVisitedVertex = { vertex, edge ->
             if (vertex == to) result.add(HashSet(currentPath))
             currentPath.remove(edge)
