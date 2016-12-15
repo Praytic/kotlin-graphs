@@ -4,7 +4,7 @@ import com.vchernogorov.graphs.storage.Edge
 import com.vchernogorov.graphs.storage.Graph
 import com.vchernogorov.graphs.storage.Vertex
 
-internal abstract class FindShortestPaths<T>(graph: Graph<T>, val from: Vertex<T>, val to: Vertex<T>)
+internal abstract class FindShortestPath<T>(graph: Graph<T>, val from: Vertex<T>, val to: Vertex<T>)
         : GraphAlgorithm<T, MutableSet<Edge<T>>>(graph) {
 
     override var result = mutableSetOf<Edge<T>>()

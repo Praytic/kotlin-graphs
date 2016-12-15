@@ -9,8 +9,6 @@ internal class DijkstraSearch<T>(graph: Graph<T>, val start: Vertex<T>,
     : GraphAlgorithm<T, Unit>(graph) {
 
     val INF = Int.MAX_VALUE / 2
-    //количество вершин в орграфе
-    val n = graph.vertices.size;
     //массив для хранения информации о пройденных и не пройденных вершинах
     val used = graph.vertices.associateTo(mutableMapOf()) { it to false };
     //массив для хранения расстояния от стартовой вершины

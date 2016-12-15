@@ -1,5 +1,6 @@
 package com.vchernogorov.graphs.algorithm
 
+import com.vchernogorov.graphs.storage.Edge
 import com.vchernogorov.graphs.storage.Graph
 import com.vchernogorov.graphs.storage.Vertex
 
@@ -14,6 +15,11 @@ fun <T, R> areIsomorphic(graph1: Graph<T>, graph2: Graph<R>) = run(AreIsomorphic
 fun <T> findAllPathsWithDfs(graph: Graph<T>, from: Vertex<T>, to: Vertex<T>) = run(FindAllPathsWithDfs(graph, from, to))
 
 fun <T> findShortestPathWithDijkstra(graph: Graph<T>, from: Vertex<T>, to: Vertex<T>) = run(FindShortestPathWithDijkstra(graph, from, to))
+
+fun <T> findShortestPathsToAll(algorithm: FindShortestPathsAlgorithm<T>):
+        Set<Set<Edge<T>>> {
+    return run(algorithm)
+}
 
 fun <T> findAllCycles(graph: Graph<T>) = run(FindAllCycles(graph))
 
