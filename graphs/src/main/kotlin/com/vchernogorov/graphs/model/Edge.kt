@@ -1,8 +1,6 @@
-package com.vchernogorov.graphs.storage;
+package com.vchernogorov.graphs.model;
 
-class Edge<T>(val from: Vertex<T>,
-              val to: Vertex<T>,
-              val cost: Int = 0) {
+class Edge<T>(val from: Vertex<T>, val to: Vertex<T>, val cost: Int = 0) {
     constructor(from: Vertex<T>, to: Vertex<T>): this(from, to, 0)
     constructor(edge: Edge<T>): this(edge.from, edge.to, edge.cost)
 

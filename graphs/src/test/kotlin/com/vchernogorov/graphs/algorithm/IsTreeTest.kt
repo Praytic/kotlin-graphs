@@ -1,8 +1,8 @@
 package com.vchernogorov.graphs.algorithm
 
-import com.vchernogorov.graphs.storage.Edge
-import com.vchernogorov.graphs.storage.Graph
-import com.vchernogorov.graphs.storage.Vertex
+import com.vchernogorov.graphs.model.Edge
+import com.vchernogorov.graphs.model.Graph
+import com.vchernogorov.graphs.model.Vertex
 import org.junit.jupiter.api.Assertions
 import org.junit.jupiter.api.Test
 
