@@ -1,4 +1,4 @@
-package com.vchernogorov.graphs.storage;
+package com.vchernogorov.graphs.model;
 
 class Vertex<T>(var data: T) {
     constructor(vertex: Vertex<T>): this(vertex.data)

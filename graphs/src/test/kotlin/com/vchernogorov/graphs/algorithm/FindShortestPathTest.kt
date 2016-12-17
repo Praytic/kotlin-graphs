@@ -1,17 +1,19 @@
 package com.vchernogorov.graphs.algorithm
 
-import com.vchernogorov.graphs.storage.Edge
-import com.vchernogorov.graphs.storage.Graph
-import com.vchernogorov.graphs.storage.Vertex
+import com.vchernogorov.graphs.model.Edge
+import com.vchernogorov.graphs.model.Graph
+import com.vchernogorov.graphs.model.Vertex
 import org.junit.jupiter.api.Assertions
+import org.junit.jupiter.api.Disabled
 import org.junit.jupiter.api.Test
 
-class FindShortestPathWithDijkstraTest {
+@Disabled
+class FindShortestPathTest {
 
     @Test
     fun emptyGraph() {
         val graph = Graph<Int>()
-        Assertions.assertTrue(findShortestPathWithDijkstra(graph, Vertex(0), Vertex(1)).isEmpty())
+        Assertions.assertTrue(findAllShortestPaths(graph, Vertex(0), Vertex(1)).isEmpty())
     }
 
     @Test
@@ -19,7 +21,7 @@ class FindShortestPathWithDijkstraTest {
         val graph = Graph<Int>()
         val vertex = Vertex<Int>(0)
         graph.vertices.add(vertex)
-        Assertions.assertTrue(findShortestPathWithDijkstra(graph, vertex, vertex).isEmpty())
+        Assertions.assertTrue(findAllShortestPaths(graph, vertex, vertex).isEmpty())
     }
 
     @Test
@@ -29,7 +31,7 @@ class FindShortestPathWithDijkstraTest {
         val vertex2 = Vertex<Int>(1)
         graph.vertices.add(vertex1)
         graph.vertices.add(vertex2)
-        Assertions.assertTrue(findShortestPathWithDijkstra(graph, vertex1, vertex2).isEmpty())
+        Assertions.assertTrue(findAllShortestPaths(graph, vertex1, vertex2).isEmpty())
     }
 
     @Test
@@ -41,11 +43,11 @@ class FindShortestPathWithDijkstraTest {
         graph.vertices.add(vertex2)
         val edge = Edge<Int>(vertex1, vertex2, 1)
         graph.edges.add(edge)
-        Assertions.assertEquals(1, findShortestPathWithDijkstra(graph, vertex1, vertex2).size)
-        Assertions.assertTrue(findShortestPathWithDijkstra(graph, vertex2, vertex1).isEmpty())
+        Assertions.assertEquals(1, findAllShortestPaths(graph, vertex1, vertex2).size)
+        Assertions.assertTrue(findAllShortestPaths(graph, vertex2, vertex1).isEmpty())
         val edge1 = Edge<Int>(vertex2, vertex1, 1)
         graph.edges.add(edge1)
-        Assertions.assertEquals(1, findShortestPathWithDijkstra(graph, vertex2, vertex1).size)
+        Assertions.assertEquals(1, findAllShortestPaths(graph, vertex2, vertex1).size)
     }
 
     @Test
@@ -68,8 +70,8 @@ class FindShortestPathWithDijkstraTest {
         graph.edges.add(edge24)
         graph.edges.add(edge13)
         graph.edges.add(edge34)
-        val shortestPath = findShortestPathWithDijkstra(graph, vertex1, vertex2)
-        val pathCost = shortestPath.sumBy { it.cost }
+        val shortestPath = findAllShortestPaths(graph, vertex1, vertex2)
+        val pathCost = shortestPath.sumBy { it.storage.sumBy { it.cost } }
         Assertions.assertEquals(4, pathCost)
     }
 }

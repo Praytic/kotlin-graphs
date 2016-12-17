@@ -1,9 +1,7 @@
 package com.vchernogorov.graphs.algorithm
 
-import com.vchernogorov.graphs.storage.Graph
+import com.vchernogorov.graphs.model.ExtendedGraph
 
-abstract class GraphAlgorithm<T, R>(var graph: Graph<T>) : Algorithm<R>() {
-
-    val n = graph.vertices.size
-    val m = graph.edges.size
+abstract class GraphAlgorithm<T, R>() {
+    abstract fun start(graph: ExtendedGraph<T>): R
 }
